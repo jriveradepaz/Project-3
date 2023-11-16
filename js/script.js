@@ -1,10 +1,11 @@
-let map: google.maps.Map;
-async function initMap(): Promise<void> {
-  const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
-  map = new Map(document.getElementById("map") as HTMLElement, {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+function init(){
+	var map = new google.maps.Map(document.getElementById('map'),{
+	center: { lat: -34.397, lng: 150.644 },
+    zoom: 4;
   });
-}
+  
 
 initMap();
+}
+
+google.maps.event.addDomListener(window, 'load', init);
