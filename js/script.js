@@ -1,3 +1,4 @@
+const apiKey = AIzaSyDJlDF23SK4JzimLJQo65rH9jDY53EjhqY;
 // Initialize and add the map
 let map;
 
