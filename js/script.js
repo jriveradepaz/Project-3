@@ -1,5 +1,5 @@
 
-var map; 
+
 function initMap(){
   const { Map } = await google.maps.importLibrary("maps");
   var map = new google.maps.Map(document.getElementById('map'), {
