@@ -21,7 +21,7 @@ async function initMap(){
 		map: myMap,
 		
 	});
-
+ 
 	var contentString = '<h1>millenium park</h1><p>Attractions: Giant Bean, Ice skating ring, and Christmas tree</p>';
 
 	var infowindow = new google.maps.InfoWindow({

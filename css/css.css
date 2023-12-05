@@ -91,11 +91,33 @@
 .ytlinks {
   border: 0px;
 }
-nav{
-  text-align: center;
+
+#navlist{
+  float: right;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
 }
-.navlist{
+
+#navlist-format ul{
   list-style: none;
+  position: relative;
+  left: 25%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#navlist-format ul li{
+  float: left;
+  position: relative;
+  right: 25%;
+  display: block;
+}
+
+#navlist-format ul li a {
+  display: block;
+  padding: 12px 28px;
 }
 
 body{
@@ -120,6 +142,12 @@ a{
 #display {
   height: 600px;
   width: 800px;
+  float: left;
+  left: 25%;
+}
+
+#mapBG {
+  background-color:grey;
 }
 
 @media screen and (min-width: 800px){
