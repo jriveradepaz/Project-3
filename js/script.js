@@ -1,5 +1,7 @@
-function init(){
-	var el = document.getElementById('map');
+const apiKey = "AIzaSyDJlDF23SK4JzimLJQo65rH9jDY53EjhqY";
+
+async function initMap(){
+	var el = document.getElementById('display');
 	var myLocation = new google.maps.LatLng(41.882629, -87.623474);
 	var mapOptions = {
 		center: myLocation,
@@ -11,7 +13,9 @@ function init(){
 	};
 
 	var myMap = new google.maps.Map(el, mapOptions);
-
+	
+	const giantBean = { lat: 41.882629, lng: -87.634049};
+	
 	var marker = new google.maps.Marker({
 		position: myLocation,
 		map: myMap,
